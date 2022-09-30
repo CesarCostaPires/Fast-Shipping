@@ -20,7 +20,7 @@ export default function CadastroEmpresa(){
     
 
     async function CadastrarUsuario(){
-        console.log("clicou");
+        console.log("clicar");
 
         let response = await api.post('cadastro-empresa.php', {
             nome: nomeEmpresa,
