@@ -16,7 +16,7 @@ export default function CadastroEmpresa(){
     let [estadoEmpresa, setEstado] = useState();
     let [contatoEmpresa, setContato] = useState();
     let [emailEmpresa, setEmail] = useState();
-
+    let [senhaEmpresa, setSenha] = useState();
     
 
     async function CadastrarUsuario(){
@@ -33,6 +33,7 @@ export default function CadastroEmpresa(){
             estado: estadoEmpresa,
             contato: contatoEmpresa,
             email: emailEmpresa
+            senha: senhaEmpresa
         }).then(function(response){Alert.alert("Usuario cadastrado com sucesso!");
     console.log(response);
         }).catch(function(error){
@@ -87,6 +88,8 @@ export default function CadastroEmpresa(){
                     <CampoMedio placeholder="0000000-0000"onChangeText={setContato} />
                     <TextoDadosMotorista>E-mail:</TextoDadosMotorista>
                     <CampoMedio placeholder="Ex: anamaria@gmail.com"onChangeText={setEmail} />
+                    <TextoDadosMotorista>Senha:</TextoDadosMotorista>
+                    <CampoMedio placeholder="000000000000000"onChangeText={setSenha} />
                     <Botao onPress={CadastrarUsuario}><TextoBotao>Cadastrar</TextoBotao></Botao>
             </Scrollzinho>
             </ViewCadastro>
