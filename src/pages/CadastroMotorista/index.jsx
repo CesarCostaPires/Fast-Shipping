@@ -5,7 +5,7 @@ import { CampoMedio, Botao, TextoBotao, CampoGrande, CampoPequeno, Scrollzinho, 
 import api from "../../services/api";
 const image = { uri: "https://img.freepik.com/fotos-premium/a-textura-da-tela-preta-escura-para-a-imagem-do-design_99266-547.jpg?w=740" };
 
-//const image = { uri: "https://img.freepik.com/vetores-gratis/copie-o-fundo-digital-dos-circuitos-azuis-do-espaco_23-2148821699.jpg?w=740&t=st=1661290825~exp=1661291425~hmac=9be0803ee93e7a7f5088d25a319edcccaee85e2fc534c09c856b363c7228f643" };
+
 export default function CadastroMotorista(){
     let [nomeMotorista, setNome] = useState();
     let [cpfCnpj, setCpfCnpj] = useState();
