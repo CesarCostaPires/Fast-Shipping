@@ -4,7 +4,7 @@ import { useNavigation} from '@react-navigation/native';
 import { CampoMedio, Botao, TextoBotao, CampoGrande, CampoPequeno, Scrollzinho, ContainerCadastro, TituloMotorista, TituloEntregas, TextoDadosMotorista, ViewCadastro, ViewCep, BotaoCep } from "../Style";
 import api from "../../services/api";
 const image = { uri: "https://s2.glbimg.com/N2kX87m3FxwDO9m3OAj1wOGjUnQ=/0x0:6048x4024/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/3/D/HVwFWeSAWiX6tpaIVg3A/20c0491-044.jpg" };
-//const image = { uri: "https://img.freepik.com/vetores-gratis/copie-o-fundo-digital-dos-circuitos-azuis-do-espaco_23-2148821699.jpg?w=740&t=st=1661290825~exp=1661291425~hmac=9be0803ee93e7a7f5088d25a319edcccaee85e2fc534c09c856b363c7228f643" };
+
 export default function CadastroEmpresa(){
     let [nomeEmpresa, setNome] = useState();
     let [cpfCnpj, setCpfCnpj] = useState();
